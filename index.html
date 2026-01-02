@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Credit Card Fraud Detection</title>
+
+    <!-- CSS FILE -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Credit Card Fraud Detection</h1>
+
+    <p>Enter transaction time:</p>
+    <input type="number" id="time">
+
+    <p>Enter transaction amount:</p>
+    <input type="number" id="amount">
+
+    <p>Transaction Type:</p>
+    <select id="type">
+        <option value="0">Shopping</option>
+        <option value="1">Transfer</option>
+        <option value="2">Cash Withdrawal</option>
+    </select>
+
+    <p>Is Online Transaction?</p>
+    <select id="online">
+        <option value="1">Yes</option>
+        <option value="0">No</option>
+    </select>
+
+    <br><br>
+
+    <button onclick="checkFraud()">Check Fraud</button>
+    <button onclick="randomTransaction()">Random Transaction</button>
+
+    <p id="result"></p>
+
+    <!-- JAVASCRIPT FILE -->
+    <script src="script.js"></script>
+
+</body>
+</html>
+
